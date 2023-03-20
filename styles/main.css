@@ -175,6 +175,7 @@ section.about .image-container img {
 
 section.services {
     padding: 50px 0;
+    background: #fff;
 }
 section.services .title {
     margin: 10px;
@@ -241,4 +242,11 @@ section.location .container {
     background:none!important;
     height:100%;
     width:100%;
+}
+
+
+footer {
+    min-height: 300px;
+    background: var(--carl-blue);
+    color: var(--carl-green);
 }
