@@ -166,6 +166,12 @@ section.about .image-container {
     margin: 10px;
     background: var(--carl-blue);
 }
+section.about .image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: right;
+}
 
 section.services {
     padding: 50px 0;
@@ -209,4 +215,29 @@ section.services .card-section .card .label {
     height: calc(100% - 110px);
     text-align: center;
     text-transform: capitalize;
+}
+
+section.location {
+    width: 100%;
+    text-align: center;
+}
+section.location .container {
+    height: 500px;
+    width: 50%;
+    max-width: 700px;
+    margin: auto;
+}
+
+/* google map iframe */
+.mapouter{
+    position:relative;
+    text-align:right;
+    height:100%;
+    width:100%;
+}
+.gmap_canvas {
+    overflow:hidden;
+    background:none!important;
+    height:100%;
+    width:100%;
 }
