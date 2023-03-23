@@ -19,7 +19,7 @@
 <body>
     <header>
         <nav>
-            <div class="image-container">
+            <div class="image-container" onclick="shutMenu()">
                 <img src="assets/carl chemist label.jpg" alt="Carl Chemist Limited">
             </div>
             <div class="menu-toggle">
@@ -36,7 +36,7 @@
             </div>
         </nav>
     </header>
-    <main>
+    <main onclick="shutMenu()">
         <section class="hero">
             <div class="container">
                 <h1 class="title">Carl Chemist Limited</h1>
@@ -48,11 +48,65 @@
                 </div>
             </div>
         </section>
+        <section class="products">
+            <!-- thinking about having a range of product section with the pop-up feature -->
+            <h1 class="title">Our range of products</h1>
+            <div class="card-section">
+                <div class="card">
+                    <div class="image-container">
+                        <img src="assets/baby-care.png" alt="baby-care">
+                    </div>
+                    <div class="label">Baby Care</div>
+                </div>
+                <div class="card">
+                    <div class="image-container">
+                        <img src="assets/first-aid.png" alt="">
+                    </div>
+                    <div class="label">First Aid</div>
+                </div>
+                <div class="card">
+                    <div class="image-container">
+                        <img src="assets/stress-relief.png" alt="">
+                    </div>
+                    <div class="label">Stress Relief</div>
+                </div>
+                <div class="card">
+                    <div class="image-container">
+                        <img src="assets/vitamins-and-mineral-supplements.png" alt="">
+                    </div>
+                    <div class="label">Mineral Supplements</div>
+                </div>
+                <div class="card">
+                    <div class="image-container">
+                        <img src="assets/skin-care.png" alt="">
+                    </div>
+                    <div class="label">Skin Care</div>
+                </div>
+                <div class="card">
+                    <div class="image-container">
+                        <img src="assets/oral-care.png" alt="">
+                    </div>
+                    <div class="label">Oral Care</div>
+                </div>
+                <div class="card">
+                    <div class="image-container">
+                        <img src="assets/pain-relief.png" alt="">
+                    </div>
+                    <div class="label">Pain Relief</div>
+                </div>
+                <div class="card">
+                    <div class="image-container">
+                        <img src="assets/eye-care.png" alt="">
+                    </div>
+                    <div class="label">Eye Care</div>
+                </div>
+            </div>
+        </section>
         <section class="about">
             <div class="container">
                 <h1 class="title">About</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo ratione aperiam ipsam accusamus, dicta necessitatibus sed, illo cum sunt est illum officiis magni similique autem! Laboriosam eligendi iusto quae distinctio.</p>
-                <a href="">read more &rarr;</a>
+                <a href="">read more &Rarr;</a>
             </div>
             <div class="image-container">
                 <img src="assets/about-section.jpg" alt="pharmacy photo">
@@ -91,17 +145,78 @@
                         <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, veniam?</div>
                     </div>
                 </div>
+                <div class="card">
+                    <div class="container">
+                        <i class="fa-solid fa-truck"></i>
+                    </div>
+                    <div class="label">
+                        <h3>wholesale & retail</h3>
+                        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, veniam?</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="container">
+                        <i class="fa-solid fa-truck"></i>
+                    </div>
+                    <div class="label">
+                        <h3>wholesale & retail</h3>
+                        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, veniam?</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="container">
+                        <i class="fa-solid fa-truck"></i>
+                    </div>
+                    <div class="label">
+                        <h3>wholesale & retail</h3>
+                        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, veniam?</div>
+                    </div>
+                </div>
             </div>
         </section>
         <section class="location">
             <h1 class="title">Find us</h1>
             <div class="container">
-                <div class="mapouter"><div class="gmap_canvas"><iframe width="100%" height="100%" id="gmap_canvas" src="https://maps.google.com/maps?q=carl chemist limited&t=&z=14&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://2yu.co">2yu</a><br><a href="https://embedgooglemap.2yu.co/">html embed google map</a></div></div>
+                <div class="mapouter">
+                    <div class="gmap_canvas">
+                        <iframe width="100%" height="100%" id="gmap_canvas" src="https://maps.google.com/maps?q=carl chemist limited&t=&z=14&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                        <a href="https://2yu.co">2yu</a><br><a href="https://embedgooglemap.2yu.co/">html embed google map</a>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
     <footer>
-        
+        <section class="section-1">
+            <div class="image-container">
+                <img src="assets/carl chemist circle.png" alt="">
+            </div>
+            <div class="label">Carl Chemist Limited</div>
+        </section>
+        <section class="section-2">
+            <h1>Products</h1>
+            <ul>
+                <li><a href="">Baby Care</a></li>
+                <li><a href="">First Aid kits</a></li>
+                <li><a href="">stress relief</a></li>
+                <li><a href="">mineral suppliments</a></li>
+                <li><a href="">skin care</a></li>
+                <li><a href="">oral care</a></li>
+                <li><a href="">pain relief</a></li>
+                <li><a href="">eye care</a></li>
+            </ul>
+        </section>
+        <section class="section-3">
+            <h1>contact us</h1>
+            <div class="contact">
+                <a href=""><i class="fa-solid fa-phone"></i><p>+233 59 492 4498</p></a>
+                <a href=""><i class="fa-brands fa-whatsapp"></i><p>+233 54 970 8561</p></a>
+                <a href=""><i class="fa-brands fa-instagram"></i><p>carl_chemists</p></a>
+            </div>
+        </section>
     </footer>
+
+    <!-- menu script -->
+    <script src="scripts/menu.js"></script>
 </body>
 </html>
