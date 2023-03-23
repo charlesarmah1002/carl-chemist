@@ -21,6 +21,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
 }
 body {
     font-family: open-sans, sans-serif;
@@ -28,6 +30,9 @@ body {
     color: var(--carl-blue);
     background: #f4f1f6;
     cursor: default;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 /* header */
@@ -143,6 +148,9 @@ header nav .menu .menu-item:hover {
 }
 
 /* main */
+main {
+    min-height: 70vh;
+}
 section.hero {
     width: 100%;
     overflow: hidden;
@@ -212,6 +220,9 @@ section.products .card-section .card {
     width: 150px;
     text-align: center;
     margin: 10px;
+}
+section.products .card-section .card .label {
+    text-transform: capitalize;
 }
 section.products .card-section .card:hover .image-container img {
     scale: 1.1;
@@ -352,7 +363,7 @@ footer {
     color: var(--carl-green);
     display: flex;
     align-items: stretch;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     padding: 30px 0;
     border-top: 10px solid;
@@ -360,11 +371,6 @@ footer {
 footer section {
     width: 100%;
     max-width: 300px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    flex-direction: column;
-    text-align: center;
     margin: 10px;
     /* border: 2px solid; */
 }
@@ -377,21 +383,25 @@ footer section a {
     text-decoration: none;
     margin: 4px;
 }
-footer section.section-3 a {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 footer section a i {
     margin: 5px;
     font-size: 1.1rem;
 }
+footer section.section-1 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    text-align: center;
+}
 footer .section-1 .image-container {
-    width: 100px;
+    width: 100%;
 }
 footer .section-1 .image-container img {
     width: 100%;
     object-fit: cover;
     object-position: center;
+}
+footer section.section-2, footer section.section-3 {
+
 }
