@@ -29,9 +29,10 @@ body {
     color: var(--carl-blue);
     background: #f4f1f6;
     cursor: default;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    position: relative;
+}
+main{
+    position: relative;
 }
 
 /* header */
@@ -43,7 +44,7 @@ header {
     justify-content: center;
     position: sticky;
     top: 0;
-    z-index: 999;
+    z-index: 99;
 }
 header nav {
     width: 100%;
@@ -297,6 +298,7 @@ section.about .image-container img {
 section.services {
     padding: 50px 0;
     background: #fff;
+    text-align: center;
 }
 section.services .title {
     margin: 10px;
@@ -368,7 +370,7 @@ section.location .container {
 }
 .gmap_canvas {
     overflow:hidden;
-    background:none!important;
+    background:none !important;
     height:100%;
     width:100%;
 }
@@ -411,3 +413,6 @@ footer section a {
 footer .container section a:hover {
     opacity: 0.7;
 }
+
+
+
